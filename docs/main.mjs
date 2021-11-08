@@ -1,5 +1,5 @@
 const d = document;
-const url = "https://htawa.github.io/_img/";
+const url = "https://htawa.github.io/img/";
 const headerTitle = "宇宙一般";
 
 const root = d.createElement("div");
