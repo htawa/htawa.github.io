@@ -1,5 +1,5 @@
 const d = document;
-const url = "http://dousiyoumonai.jf.land.to/img/teiki/";
+const url = "https://htawa.github.io/_img/";
 const headerTitle = "宇宙一般";
 
 const root = d.createElement("div");
