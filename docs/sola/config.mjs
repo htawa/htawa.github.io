@@ -17,6 +17,7 @@ export const config = {
       "url": [
         [
           "koteki_f001.png",
+          "koteki_f002.png",
         ],
       ],
     },
