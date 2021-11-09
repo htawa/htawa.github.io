@@ -1,6 +1,7 @@
 const d = document;
-const url = "https://htawa.github.io/img/";
-const headerTitle = "宇宙一般";
+const ImgURL = "https://htawa.github.io/img/";
+const SiteTitle = "宇宙一般";
+const Copyright = "© 2021 ssz.";
 
 const root = d.createElement("div");
 const wrapper = d.createElement("div");
@@ -8,7 +9,7 @@ const wrapper = d.createElement("div");
 const createHeader = function(config) {
   const h = d.createElement("header");
   const a = d.createElement("a");
-  a.textContent = headerTitle;
+  a.textContent = SiteTitle;
   a.href = config.rootPath;
   h.appendChild(a);
   return h;
@@ -44,7 +45,7 @@ const createMain = function(config) {
 
 const createFooter = function() {
   const f = d.createElement("footer");
-  f.textContent = "© 2021 ssz.";
+  f.textContent = Copyright;
   return f;
 };
 
@@ -131,7 +132,7 @@ contentObj.top = function(conf) {
       const ia = conf[i];
       img.width = ia[1];
       img.height = ia[2];
-      img.src = url + ia[0];
+      img.src = ImgURL + ia[0];
       inner.appendChild(img);
     }
   });
@@ -147,7 +148,7 @@ contentObj.icon = function(conf) {
         const img = d.createElement("img");
         img.width = conf.width;
         img.height = conf.height;
-        img.src = url + row[j];
+        img.src = ImgURL + row[j];
         div.appendChild(img);
       }
       inner.appendChild(div);
@@ -162,7 +163,7 @@ contentObj.cutin = function(conf) {
       const ia = conf[i];
       img.width = ia[1];
       img.height = ia[2];
-      img.src = url + ia[0];
+      img.src = ImgURL + ia[0];
       inner.appendChild(img);
     }
   });
@@ -259,7 +260,7 @@ const getIcon = function(iconNum, icon) {
   const img = d.createElement("img");
   img.width = icon.width;
   img.height = icon.height;
-  img.src = url + icon.url[column][row];
+  img.src = ImgURL + icon.url[column][row];
   return img;
 };
 
