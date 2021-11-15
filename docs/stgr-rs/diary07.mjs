@@ -5,9 +5,10 @@ export const config = {
     {"text": "Stroll Green -Restroll-", "path": "./stgr-rs.html"},
     {"text": "7. ほしふる洞窟", "path": "./diary07.html"},
   ],
-  "content": ["header", "name", "text", "diary"],
+  "content": ["header", "diaryNav","name", "text", "diary", "diaryNav"],
   "inner": {
     "header": "7. ほしふる洞窟（Stroll Green -Restroll-）",
+    "diaryNav": {"num": 7, "crumbs": 1},
     "text": `洞窟の中、辺りには星のような結晶が煌めく。
 近くの岩に腰をかけて、少し休憩。
 その岩もまた結晶混じりで明るさを放っている。

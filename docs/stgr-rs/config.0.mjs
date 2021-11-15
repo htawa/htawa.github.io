@@ -30,6 +30,7 @@ export const config = {
       ["9. ひみつの庭", "./diary09.html"],
       ["10. たそがれの頂", "./diary10.html"],
       ["11. エピローグ", "./diary11.html"],
+      ["12. さいはての地", "./diary12.html"],
     ],
   },
 };

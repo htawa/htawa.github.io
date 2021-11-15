@@ -5,9 +5,10 @@ export const config = {
     {"text": "Stroll Green -Restroll-", "path": "./stgr-rs.html"},
     {"text": "10. たそがれの頂", "path": "./diary10.html"},
   ],
-  "content": ["header", "name", "text", "diary"],
+  "content": ["header", "diaryNav","name", "text", "diary", "diaryNav"],
   "inner": {
     "header": "10. たそがれの頂（Stroll Green -Restroll-）",
+    "diaryNav": {"num": 10, "crumbs": 1},
     "text": `空の庭の頂に立って空を見渡す。
 それは空か、それとも宇宙か。
 紺色に染まる果てを眺める。

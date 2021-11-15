@@ -5,9 +5,10 @@ export const config = {
     {"text": "Stroll Green -Restroll-", "path": "./stgr-rs.html"},
     {"text": "6. くらやみの森", "path": "./diary06.html"},
   ],
-  "content": ["header", "name", "text", "diary"],
+  "content": ["header", "diaryNav","name", "text", "diary", "diaryNav"],
   "inner": {
     "header": "6. くらやみの森（Stroll Green -Restroll-）",
+    "diaryNav": {"num": 6, "crumbs": 1},
     "text": `森を奥へ奥へと進む。
 鳥の鳴き声が木々の合間に響く。
 空を覆い隠す枝葉が日の光を薄くする。

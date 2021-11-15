@@ -5,9 +5,10 @@ export const config = {
     {"text": "Stroll Green -Restroll-", "path": "./stgr-rs.html"},
     {"text": "4. そよかぜの丘", "path": "./diary04.html"},
   ],
-  "content": ["header", "name", "text", "diary"],
+  "content": ["header", "diaryNav","name", "text", "diary", "diaryNav"],
   "inner": {
     "header": "4. そよかぜの丘（Stroll Green -Restroll-）",
+    "diaryNav": {"num": 4, "crumbs": 1},
     "text": `丘を目指す。
 歩いていると次第に平の道が斜めになっていく。
 登る自分を後ろから押し上げるように風が吹く。

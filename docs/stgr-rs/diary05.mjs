@@ -5,9 +5,10 @@ export const config = {
     {"text": "Stroll Green -Restroll-", "path": "./stgr-rs.html"},
     {"text": "5. ひだまりの高原", "path": "./diary05.html"},
   ],
-  "content": ["header", "name", "text", "diary"],
+  "content": ["header", "diaryNav","name", "text", "diary", "diaryNav"],
   "inner": {
     "header": "5. ひだまりの高原（Stroll Green -Restroll-）",
+    "diaryNav": {"num": 5, "crumbs": 1},
     "text": `高い木々が続く道を抜ける。
 丘を越え、進むにつれ標高は上がっていく。
 以前まで居た丘は空気に青く染まっていた。

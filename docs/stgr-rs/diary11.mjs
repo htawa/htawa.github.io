@@ -5,9 +5,10 @@ export const config = {
     {"text": "Stroll Green -Restroll-", "path": "./stgr-rs.html"},
     {"text": "11. エピローグ", "path": "./diary11.html"},
   ],
-  "content": ["header", "name", "text", "diary"],
+  "content": ["header", "diaryNav","name", "text", "diary", "diaryNav"],
   "inner": {
     "header": "11. エピローグ（Stroll Green -Restroll-）",
+    "diaryNav": {"num": 11, "crumbs": 1},
     "text": `月が花を照らす夜。
 少しのお菓子を持って豊穣の祭りに赴く。
 /T2/ ~/「…。」

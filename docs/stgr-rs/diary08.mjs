@@ -5,9 +5,10 @@ export const config = {
     {"text": "Stroll Green -Restroll-", "path": "./stgr-rs.html"},
     {"text": "8. いろどりの山道", "path": "./diary08.html"},
   ],
-  "content": ["header", "name", "text", "diary"],
+  "content": ["header", "diaryNav","name", "text", "diary", "diaryNav"],
   "inner": {
     "header": "8. いろどりの山道（Stroll Green -Restroll-）",
+    "diaryNav": {"num": 8, "crumbs": 1},
     "text": `緑から黄、赤へと変わる葉の色。
 歩くのに優しい山道を観光気分で進む。
 少し離れた所から水の流れる轟音が響く。

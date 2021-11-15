@@ -5,9 +5,10 @@ export const config = {
     {"text": "Stroll Green -Restroll-", "path": "./stgr-rs.html"},
     {"text": "9. ひみつの庭", "path": "./diary09.html"},
   ],
-  "content": ["header", "name", "text", "diary"],
+  "content": ["header", "diaryNav","name", "text", "diary", "diaryNav"],
   "inner": {
     "header": "9. ひみつの庭（Stroll Green -Restroll-）",
+    "diaryNav": {"num": 9, "crumbs": 1},
     "text": `深い森の奥に私の家がある。
 およそ50年ぶりにその扉を開け、中に入る。
 変わってはいない、あの日この家を出てから。

@@ -164,3 +164,28 @@ h3 {
   text-decoration: underline solid 1px;
 }
 
+.diaryNav {
+  display: table;
+  width: 100%;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.diaryNav .prev {
+  display: table-cell;
+  text-align: left;
+  width: 30%;
+}
+
+.diaryNav .character {
+  display: table-cell;
+  text-align: center;
+  width: 30%;
+}
+
+.diaryNav .next{
+  display: table-cell;
+  text-align: right;
+  width: 30%;
+}
+

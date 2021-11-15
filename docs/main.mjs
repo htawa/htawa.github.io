@@ -181,15 +181,16 @@ contentObj.text = function(conf, config) {
   });
 };
 
-contentObj.diary = function(conf) {
+contentObj.diary = function(conf, config) {
   return profBlock("日記", inner => {
     const div = d.createElement("div");
     const ol = d.createElement("ol");
+    const diaryNav = config.inner.diaryNav || {};
     for(let i = 0; i < conf.length; i++) {
       const link = conf[i];
       const li = d.createElement("li");
       const a = d.createElement("a");
-      a.textContent = link[0];
+      a.textContent = i === diaryNav.num ? `>> ${link[0]} <<` : link[0];
       a.href = link[1];
       li.appendChild(a);
       ol.appendChild(li);
@@ -198,6 +199,37 @@ contentObj.diary = function(conf) {
     div.appendChild(ol);
     inner.appendChild(div);
   });
+};
+
+contentObj.diaryNav = function(conf, config) {
+  const diary = config.inner.diary;
+  const wrapper = d.createElement("div");
+  const prev = d.createElement("div");
+  const character = d.createElement("div");
+  const next = d.createElement("div");
+  const f = (e, href, text) => {
+    const a = d.createElement("a");
+    a.textContent = text;
+    a.href = href;
+    e.appendChild(a);
+  };
+  if(conf.num > 0) {
+    const a = diary[conf.num - 1];
+    f(prev, a[1], "<< " + a[0]);
+  }
+  if(conf.num < diary.length - 1) {
+    const a = diary[conf.num + 1];
+    f(next, a[1], a[0] + " >>");
+  }
+  f(character, config.crumbs[conf.crumbs].path, config.inner.name);
+  prev.classList.add("prev");
+  character.classList.add("character");
+  next.classList.add("next");
+  wrapper.appendChild(prev);
+  wrapper.appendChild(character);
+  wrapper.appendChild(next);
+  wrapper.classList.add("diaryNav");
+  return wrapper;
 };
 
 const textAnalysis = function(text, config) {

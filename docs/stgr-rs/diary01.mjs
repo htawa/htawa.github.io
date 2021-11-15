@@ -5,9 +5,10 @@ export const config = {
     {"text": "Stroll Green -Restroll-", "path": "./stgr-rs.html"},
     {"text": "1. おだやかな草原", "path": "./diary01.html"},
   ],
-  "content": ["header", "name", "text", "diary"],
+  "content": ["header", "diaryNav","name", "text", "diary", "diaryNav"],
   "inner": {
     "header": "1. おだやかな草原（Stroll Green -Restroll-）",
+    "diaryNav": {"num": 1, "crumbs": 1},
     "text": `雨だ。
 
 天の川に遮られた二つの星がその川を渡る物語の日、短冊を配る人がいる。

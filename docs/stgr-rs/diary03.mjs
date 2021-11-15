@@ -5,9 +5,10 @@ export const config = {
     {"text": "Stroll Green -Restroll-", "path": "./stgr-rs.html"},
     {"text": "3. あざやかな花園", "path": "./diary03.html"},
   ],
-  "content": ["header", "name", "text", "diary"],
+  "content": ["header", "diaryNav","name", "text", "diary", "diaryNav"],
   "inner": {
     "header": "3. あざやかな花園（Stroll Green -Restroll-）",
+    "diaryNav": {"num": 3, "crumbs": 1},
     "text": `ここ最近は花壇の手入れが日課になっている。
 そこに咲く花々、その一輪に顔を近づける。
 鼻先に軽く触れる花びら、そのまま目を閉じて息を吸う。

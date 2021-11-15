@@ -5,9 +5,10 @@ export const config = {
     {"text": "Stroll Green -Restroll-", "path": "./stgr-rs.html"},
     {"text": "2. せせらぎの河原", "path": "./diary02.html"},
   ],
-  "content": ["header", "name", "text", "diary"],
+  "content": ["header", "diaryNav", "name", "text", "diary", "diaryNav"],
   "inner": {
     "header": "2. せせらぎの河原（Stroll Green -Restroll-）",
+    "diaryNav": {"num": 2, "crumbs": 1},
     "text": `魔女と呼ばれる人々が次から次へと火にかけられていく。
 燃え盛る火は暑く、汗が吹き出す。
 耳を擘く悲鳴が火の中より上がる、その声の主の事はよく知っている。

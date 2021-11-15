@@ -5,9 +5,10 @@ export const config = {
     {"text": "Stroll Green -Restroll-", "path": "./stgr-rs.html"},
     {"text": "0. はじまりの場所", "path": "./diary00.html"},
   ],
-  "content": ["header", "name", "text", "diary"],
+  "content": ["header", "diaryNav", "name", "text", "diary", "diaryNav"],
   "inner": {
     "header": "0. はじまりの場所（Stroll Green -Restroll-）",
+    "diaryNav": {"num": 0, "crumbs": 1},
     "text": `空の庭園に来て数日が経つ。
 
 ここに来る前は苛立つ事も多かったが、最近は楽しいと思う事が続いている。
